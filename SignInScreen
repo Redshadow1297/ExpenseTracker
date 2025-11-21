@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+
+class SignUpScreen extends StatefulWidget {
+  const SignUpScreen({super.key});
+
+  @override
+  State<SignUpScreen> createState() => _SignUpScreenState();
+}
+
+class _SignUpScreenState extends State<SignUpScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return  Scaffold(
+      appBar: AppBar(
+        title: Text("Register yourself",style: TextStyle(color: Colors.white),),
+        backgroundColor: const Color.from(
+          alpha: 1,
+          red: 0.035,
+          green: 0.49,
+          blue: 0.58,
+        ),
+      ),
+    );
+  }
+}
